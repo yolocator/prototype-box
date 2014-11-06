@@ -1,1 +1,1 @@
-sudo apt-get install screen
+apt-get install screen

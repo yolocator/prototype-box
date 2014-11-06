@@ -135,10 +135,10 @@ nginx:
             ssl_cert: ''
             ssl_key: ''
         4dQ4TPMnp2Hr:
-            server_name: api.base.dev
+            server_name: docs.base.dev
             server_aliases:
-                - api.base.dev
-            www_root: /var/www/api
+                - docs.base.dev
+            www_root: /var/www/docs
             listen_port: '80'
             location: \.php$
             index_files:
@@ -199,8 +199,10 @@ ruby:
         jSJnjTXwqKYm:
             version: ''
 nodejs:
-    install: '0'
-    npm_packages: {  }
+    install: '1'
+    npm_packages:
+        - aglio
+        - api-mock
 python:
     install: '1'
     packages: {  }
